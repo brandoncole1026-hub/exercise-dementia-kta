@@ -29,3 +29,94 @@
  .topic-identity strong {font-size:1.04rem}
  .topic-identity small {font-size:.54rem;letter-spacing:.035em}
 }
+
+/* HOME REVISION 02 — quiet, clinical editorial theme across the site.
+   Scoped overrides preserve the Big Picture HTML, card layout, and content. */
+:root {
+  --ink:#1d2d42; --muted:#5d6a79; --deep:#20354e; --deep2:#293f5a;
+  --mint:#e4ebf4; --lime:#dce7f1; --cream:#fcfcfb; --pale:#f1f4f7;
+  --line:#dce2e9; --teal:#436889; --amber:#b17a3b; --blue:#467398;
+  --shadow:0 16px 55px rgba(18,35,55,.065);
+}
+body {background:var(--cream)}
+.site-header {background:#fff;color:#1d2d42;border-bottom:1px solid #e1e5ea}
+.header-inner {min-height:78px}
+.topic-identity strong {color:#1b2b40;font-size:1.12rem;font-weight:750;letter-spacing:-.03em}
+.site-nav a {color:#4e5e71;font-size:.82rem}
+.site-nav a:hover,.site-nav a[aria-current="page"] {background:#eaf0f7;color:#1b3653}
+.mobile-toggle {color:#1b2b40;border-color:#cdd7e2}
+.eyebrow {color:#526e8c}
+.muted {color:#81909c}
+.mini-label {color:#718191}
+.btn {border-radius:9px;font-weight:700;transition:background .18s ease,transform .18s ease}
+.btn-primary {background:#203953;color:#fff}
+.btn-primary:hover {background:#305373}
+.btn-secondary {background:#fff;border-color:#a9b8ca;color:#203953}
+.btn-secondary:hover {background:#eaf0f6}
+.text-link {color:#2b5a83}
+.hero {background:linear-gradient(140deg,#fafbfc 0%,#f3f6f9 100%);color:#1c2e45;border-bottom:1px solid #e0e6ec}
+.hero:after {display:none}
+.hero-grid {grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);min-height:570px;gap:clamp(30px,5vw,80px)}
+.hero-copy {padding:84px 0 89px}
+.hero h1 {font-size:clamp(3rem,4.6vw,5.05rem);line-height:1.075;letter-spacing:-.057em;max-width:660px;margin-bottom:28px;font-weight:740}
+.hero h1 span {color:#66809a;font-weight:560}
+.hero-lede {font-size:1.04rem;line-height:1.85;max-width:535px;color:#4f6073;margin:0 0 31px}
+.hero-actions {gap:12px}
+.hero-photo {position:relative;margin:36px 0;min-height:485px;overflow:hidden;border-radius:17px;background:linear-gradient(140deg,#cbd5df,#8fa4b9);box-shadow:0 28px 65px rgba(27,46,68,.12);border:1px solid #dce4ed}
+.hero-photo img {display:block;width:100%;height:100%;min-height:485px;object-fit:cover;object-position:center center}
+.hero-photo figcaption {position:absolute;bottom:0;left:0;right:0;font-size:.65rem;letter-spacing:.02em;color:#fff;padding:35px 16px 13px;background:linear-gradient(transparent,rgba(10,26,41,.63))}
+.hero-photo figcaption a {color:#fff;text-underline-offset:3px}
+.stats-band {background:#e9eef4}
+.stats-grid>div {border-right-color:#cbd5e0}
+.stats-grid strong {color:#2a4764}
+.stats-grid span,.stats-grid .sub-number {color:#596b7e}
+.pale-section {background:#f1f4f7}
+.split-story .btn {background:#203953;color:#fff}
+.steps-panel {border-color:#dce4ea}
+.path-step>span {color:#a1b0c0}
+.cta-card,.cta-card.flat {background:#203953}
+.cta-card .eyebrow {color:#c9d8ea}
+.cta-card p:not(.eyebrow) {color:#d8e2ec}
+.page-hero {background:linear-gradient(135deg,#eaf0f6,#f6f8fa);border-bottom:1px solid #dbe3ed}
+.page-hero h1 {color:#203953}
+.page-hero-hint {color:#56708d;border-left-color:#879fb9}
+.review-banner {background:#203953}
+.review-banner .eyebrow,.review-banner p,.review-facts span {color:#dbe6f2}
+.review-facts>div {border-left-color:#657f98}
+.bar-positive,.key.positive {background:#486e90}
+.guide-row>.icon {color:#426e91}
+.safety-banner {background:#edf2f7;border-color:#d4dfe9;border-left-color:#94abc1}
+.safety-banner .icon {color:#456987}
+.timeline-chip,.eval-badge {background:#e7eef5;color:#355d80}
+.timeline-number {color:#a7bfd3}
+.resource-icon {background:#e5edf6;color:#476b8e}
+.handout-header {border-bottom-color:#476d8c}
+.handout-stats strong {color:#325c7c}
+.site-footer {background:#1d3047;padding:45px 0 42px;color:#f5f7f9}
+.footer-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;max-width:650px}
+.footer-grid>div {display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+.footer-grid strong {margin:0 0 6px;color:#f7fafc;font-size:.85rem}
+.footer-grid a {color:#c9d6e3;font-size:.84rem}
+/* Existing knowledge-to-action and exercises use neutral controls. */
+.filter-controls input {border-color:#cdd8e2}
+.filter-group button {border-color:#d2dce6;color:#526779}
+/* Keep the Big Picture cards' geometry and the three evidence statuses intact. */
+@media(max-width:820px) {
+  .site-nav {top:75px;background:#fff;border-bottom-color:#d8e0e8}
+  .site-nav a {color:#29425a}
+  .hero-grid {grid-template-columns:1fr;gap:8px}
+  .hero-copy {padding:68px 0 0}
+  .hero-photo {min-height:365px;margin:12px 0 52px;max-width:620px}
+  .hero-photo img {min-height:365px}
+}
+@media(max-width:560px) {
+  .header-inner {min-height:70px}
+  .site-nav {top:70px}
+  .hero h1 {font-size:clamp(2.45rem,11.5vw,3.45rem)}
+  .hero-copy {padding:58px 0 0}
+  .hero-lede {font-size:.96rem;line-height:1.7}
+  .hero-photo {min-height:300px;margin:15px 0 39px}
+  .hero-photo img {min-height:300px}
+  .footer-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+}
+
