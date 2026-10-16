@@ -1,4 +1,4 @@
-# Moving Minds — Exercise & Dementia
+# Exercise & Dementia — Evidence into Practice
 
 A lightweight, accessible **static website** translating a student knowledge-to-action project on exercise for people living with Alzheimer's disease, dementia, and mild cognitive impairment into a clinical educational resource.
 

@@ -15,3 +15,17 @@
 @media print{@page{size:letter;margin:.42in}body{background:white;color:#111;font-size:10px;-webkit-print-color-adjust:exact;print-color-adjust:exact}.site-header,.site-footer,.no-print{display:none!important}.handout-page{width:100%;margin:0;padding:0;box-shadow:none;border:0}.handout-header h1{font-size:30px}.handout-page h2{font-size:13px}.handout-page p,.handout-page li{font-size:10px;line-height:1.45}.handout-page .eyebrow{font-size:9px;margin:0 0 7px}.handout-stats strong{font-size:22px}.handout-stats>div{padding:12px 3px}.handout-two-col{gap:24px;margin-top:14px}.handout-callout{margin-top:15px;padding:14px}.handout-end{font-size:8px}.handout-page section{break-inside:avoid}}
 
 .methods-note{margin:25px 0 -28px;padding:19px 24px;border:1px solid var(--line);border-radius:13px;background:#f3f7f1;color:#56766b;font-size:.85rem;line-height:1.7}.methods-note strong{color:#1b5246}
+
+/* Revision 01: neutral, non-branded educational topic identification. */
+.topic-identity {display:inline-flex;flex-direction:column;gap:4px;justify-content:center;
+  text-decoration:none;color:#fff;flex-shrink:0;min-width:0}
+.topic-identity strong {display:block;font-size:1.15rem;font-weight:720;line-height:1.2;
+  letter-spacing:-.018em;color:#fff}
+.topic-identity small {font-size:.61rem;letter-spacing:.06em;text-transform:uppercase;
+  color:#b6d5cc;font-weight:650;line-height:1.4}
+.footer-topic {font-size:1.15rem!important;font-weight:700;color:#fff!important;
+  margin:0 0 12px!important;line-height:1.45}
+@media(max-width:560px) {
+ .topic-identity strong {font-size:1.04rem}
+ .topic-identity small {font-size:.54rem;letter-spacing:.035em}
+}
